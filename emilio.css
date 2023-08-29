@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+header {
+    color: white;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 70px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+header nav ul {
+    margin: 0;
+    list-style: none;
+    display: inline;
+    position: absolute;
+    right: 65px;
+    top: 40px;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 10px;
+}
+
+li::after {
+    content: "|";
+    margin-left: 25px;
+}
+
+li:last-child::after {
+    content: "";
+}
