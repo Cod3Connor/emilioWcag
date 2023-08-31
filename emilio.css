@@ -8,7 +8,7 @@ header {
     background-color: black;
     display: flex;
     flex-direction: row;
-
+    align-items: center;
 }
 
 header h1 {
@@ -22,9 +22,6 @@ header nav ul {
     margin: 0;
     list-style: none;
     display: inline;
-    position: absolute;
-    right: 65px;
-    top: 40px;
 }
 
 header nav ul li {
@@ -43,4 +40,16 @@ li:last-child::after {
 
 input[type=button] {
     all: unset;
+}
+
+input[type=button]:focus {
+    border: 1px solid #333;
+}
+
+@media screen and (max-width: 910px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
